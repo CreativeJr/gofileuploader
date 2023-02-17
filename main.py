@@ -11,9 +11,9 @@ load_dotenv()
 
 Bot = Client(
     "GoFile-Bot",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+    bot_token=os.environ.get("BOT_TOKEN", "5203534392:AAEvYZSnF4iLVj7BVTdUob-WimlOa7IZK1o"),
+    api_id=int(os.environ.get("API_ID", "4926633")),
+    api_hash=os.environ.get("API_HASH", "be7b1d39ac5116d22701f8b6ac956785")
 )
 
 INSTRUCTIONS = """I am a gofile uploader telegram bot. \
